@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>EXPENSE TRACKER</h1>
+    <h2>MONTHLY BUDGET</h2>
+  </header>
+
+  <section class="budget-section">
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Total Budget</th>
+          <th>Today's Expenditure</th>
+          <th>Remaining Budget</th>
+        </tr>
+      </thead>
+      <tbody id="budgetTable">
+        <tr>
+          <td>Food</td>
+          <td><input type="number" id="foodTotal" placeholder="Total"></td>
+          <td><input type="number" id="foodSpent" placeholder="Spent"></td>
+          <td id="foodRemaining">-</td>
+        </tr>
+        <tr>
+          <td>Expenses</td>
+          <td><input type="number" id="expensesTotal" placeholder="Total"></td>
+          <td><input type="number" id="expensesSpent" placeholder="Spent"></td>
+          <td id="expensesRemaining">-</td>
+        </tr>
+        <tr>
+          <td>Enjoyment</td>
+          <td><input type="number" id="enjoymentTotal" placeholder="Total"></td>
+          <td><input type="number" id="enjoymentSpent" placeholder="Spent"></td>
+          <td id="enjoymentRemaining">-</td>
+        </tr>
+        <tr>
+          <td>Tickets</td>
+          <td><input type="number" id="ticketsTotal" placeholder="Total"></td>
+          <td><input type="number" id="ticketsSpent" placeholder="Spent"></td>
+          <td id="ticketsRemaining">-</td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="calculateBtn">Calculate Remaining Budget</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
